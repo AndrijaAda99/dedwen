@@ -1,0 +1,29 @@
+body {
+    border: 0px;
+    margin: 0px;
+}
+.menu {
+    width: 200px;
+}
+.menu a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: gray;
+    color: red;
+}
+.menu-items ul {
+    list-style-type: none;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+
+}
+.menu:hover ul{
+    height: auto;
+}
