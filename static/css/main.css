@@ -39,6 +39,7 @@ body {
 
 .dropdown-submenu>.dropdown-menu {
     top: 100%;
+    left: 5%;
     margin-top: -6px;
     margin-left: -1px;
     -webkit-border-radius: 0 6px 6px 6px;
