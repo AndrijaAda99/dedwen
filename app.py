@@ -82,9 +82,9 @@ def schedulereading():
 def readingondemand():
     return render_template('readingondemand.html')
 
-@app.route('/manualmeter')
-def manualmeter():
-    return render_template('manualmeter.html')
+@app.route('/singlemeterman')
+def singlemeterman():
+    return render_template('singlemeterman.html')
 
 @app.route('/readingpersonal')
 def readingpersonal():

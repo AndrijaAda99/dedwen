@@ -1,43 +1,103 @@
-<nav>
-    <div class="menu">
-        <a href="#">Menu</a>
-        <div class="menu-items">
-            <ul>
-                <li><a href="{{url_for('dashboard')}}">Home</a></li>
-                <li><a href="{{url_for('automaticmeasurement')}}">Automatic measurement</a></li>
-                <li><a href="{{url_for('meters')}}">Meters</a></li>
-                <li><a href="{{url_for('concentrators')}}">Concentrators</a></li>
-                <li><a href="{{url_for('pointofdelievery')}}">Point of delievery</a></li>
-                <li><a href="{{url_for('systemnotification')}}">System notification</a></li>
-                <li><a href="{{url_for('alarms')}}">Alarms and Events</a></li>
-                <li><a href="{{url_for('meterauto')}}">Meter auto detect</a></li>
-                <li><a href="{{url_for('statuslog')}}">Status log</a></li>
-                <li><a href="{{url_for('automaticmeter')}}">Automatic Meter Reading</a></li>
-                <li><a href="{{url_for('singlemeter')}}">Single meter reading</a></li>
-                <li><a href="{{url_for('concentratormeterreading')}}">Concentrator meter reading</a></li>
-                <li><a href="{{url_for('schedulereading')}}">Schedule reading</a></li>
-                <li><a href="{{url_for('readingondemand')}}">Reading on demand</a></li>
-                <li><a href="{{url_for('manualmeter')}}">Manual meter reading</a></li>
-                <li><a href="{{url_for('readingpersonal')}}">Reading personal</a></li>
-                <li><a href="{{url_for('readingequipment')}}">Reading equipement</a></li>
-                <li><a href="{{url_for('historyofchanges')}}">History od changes</a></li>
-                <li><a href="{{url_for('pointofdelieverymeter')}}">Point of delievery meter</a></li>
-                <li><a href="{{url_for('consumermeter')}}">Consumer meter</a></li>
-                <li><a href="{{url_for('concentratormeter')}}">Concentrator meter</a></li>
-                <li><a href="{{url_for('hierarchiesorganization')}}">Hierarchies organizations</a></li>
-                <li><a href="{{url_for('definitionstructures')}}">Definition structures</a></li>
-                <li><a href="{{url_for('overviewstructure')}}">Overview structure</a></li>
-                <li><a href="{{url_for('assignmentelements')}}">Assignment elements</a></li>
-                <li><a href="{{url_for('meterassignment')}}">Meter assignment</a></li>
-                <li><a href="{{url_for('concentratorassignment')}}">Concentrator assignment</a></li>
-                <li><a href="{{url_for('pointofdelieveryassignment')}}">Point of delievery assignment</a></li>
-                <li><a href="{{url_for('energyconsumers')}}">Energy Consumers</a></li>
-                <li><a href="{{url_for('listconsumers')}}">List consumers</a></li>
-                <li><a href="{{url_for('modifyconsumers')}}">Modify consumers</a></li>
-                <li><a href="{{url_for('addconsumer')}}">Add new consumer</a></li>
-                <li><a href="{{url_for('editconsumer')}}">Edit consumer</a></li>
-                <li><a href="{{url_for('reports')}}">Reports</a></li>
-            </ul>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('dashboard')}}">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Automatic measurement
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{url_for('meters')}}">Meters</a>
+                    <a class="dropdown-item" href="{{url_for('concentrators')}}">Concentrators</a>                    
+                    <a class="dropdown-item" href="{{url_for('pointofdelievery')}}">Point of delievery</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    System notification
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{url_for('alarms')}}">Alarms and Events</a>
+                    <a class="dropdown-item" href="{{url_for('meterauto')}}">Meter auto detect</a>
+                    <a class="dropdown-item" href="{{url_for('statuslog')}}">Status log</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Automatic Meter Reading
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{url_for('singlemeter')}}">Single meter reading</a>
+                    <a class="dropdown-item" href="{{url_for('concentratormeterreading')}}">Concentrator meter reading</a>    
+                    <a class="dropdown-item" href="{{url_for('schedulereading')}}">Schedule reading</a>
+                    <a class="dropdown-item" href="{{url_for('readingondemand')}}">Reading on demand</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Manual meter reading
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{url_for('singlemeterman')}}">Single meter reading</a>
+                    <a class="dropdown-item" href="{{url_for('readingpersonal')}}">Reading personal</a>
+                    <a class="dropdown-item" href="{{url_for('readingequipment')}}">Reading equipement</a>       
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        History of changes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{url_for('pointofdelieverymeter')}}">Point of delievery meter</a>
+                    <a class="dropdown-item" href="{{url_for('consumermeter')}}">Consumer meter</a>
+                    <a class="dropdown-item" href="{{url_for('concentratormeter')}}">Concentrator meter</a>       
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hierarchies organizations
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{{url_for('definitionstructures')}}">Definition structures</a></li>
+                    <li><a class="dropdown-item" href="{{url_for('overviewstructure')}}">Overview structure</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Assignment elements
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{{url_for('meterassignment')}}">Meter assignment</a></li>
+                            <li><a class="dropdown-item" href="{{url_for('concentratorassignment')}}">Concentrator assignment</a></li>
+                            <li><a class="dropdown-item" href="{{url_for('pointofdelieveryassignment')}}">Point of delievery assignment</a></li>
+                        </ul>
+                    </li>       
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Energy Consumers
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{{url_for('listconsumers')}}">List consumers</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Modify consumers
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{url_for('addconsumer')}}">Add new consumer</a>
+                            <a class="dropdown-item" href="{{url_for('editconsumer')}}">Edit consumer</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('reports')}}">Reports</a>
+            </li>
+        </ul>
     </div>
 </nav>
