@@ -176,6 +176,11 @@ def addconsumer():
 def editconsumer():
     return render_template('editconsumer.html')
 
+@app.route('/structure')
+@login_required
+def structure():
+    return render_template('structure.html')
+
 @app.route('/reports')
 @login_required
 def reports():
